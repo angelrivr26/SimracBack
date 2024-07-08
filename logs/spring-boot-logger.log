@@ -1,0 +1,259 @@
+2023-10-18 16:19:51,897 INFO [main] org.springframework.boot.StartupInfoLogger : Starting ApiApplication using Java 1.8.0_341 on DESKTOP-DMEN5D5 with PID 26588 (C:\xampp\htdocs\Sernanp\GITLAB_PRODUCCION\backend-mod\target\classes started by cliente in C:\xampp\htdocs\Sernanp\GITLAB_PRODUCCION\backend-mod)
+2023-10-18 16:19:51,911 INFO [main] org.springframework.boot.SpringApplication : The following 1 profile is active: "dev"
+2023-10-18 16:19:56,212 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-18 16:19:58,668 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2422 ms. Found 43 JPA repository interfaces.
+2023-10-18 16:20:04,790 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2023-10-18 16:20:04,849 INFO [main] org.apache.juli.logging.DirectJDKLog : Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-18 16:20:04,869 INFO [main] org.apache.juli.logging.DirectJDKLog : Starting service [Tomcat]
+2023-10-18 16:20:04,923 INFO [main] org.apache.juli.logging.DirectJDKLog : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-10-18 16:20:06,046 INFO [main] org.apache.juli.logging.DirectJDKLog : Initializing Spring embedded WebApplicationContext
+2023-10-18 16:20:06,050 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13706 ms
+2023-10-18 16:20:06,856 INFO [main] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-18 16:20:07,050 INFO [main] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-18 16:20:07,735 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-18 16:20:08,110 INFO [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2023-10-18 16:20:08,486 INFO [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2023-10-18 16:20:08,538 INFO [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-10-18 16:20:16,183 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-18 16:20:16,233 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-18 16:20:26,784 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-18 16:20:27,562 INFO [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-10-18 16:20:28,887 INFO [main] org.apache.juli.logging.DirectJDKLog : Starting ProtocolHandler ["http-nio-8080"]
+2023-10-18 16:20:29,019 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '/api'
+2023-10-18 16:20:29,029 INFO [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2023-10-18 16:20:30,152 INFO [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-10-18 16:20:30,632 INFO [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2023-10-18 16:20:32,326 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2023-10-18 16:20:32,353 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_1
+2023-10-18 16:20:32,651 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2023-10-18 16:20:32,704 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2023-10-18 16:20:32,782 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2023-10-18 16:20:32,838 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_2
+2023-10-18 16:20:32,942 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_2
+2023-10-18 16:20:33,324 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_1
+2023-10-18 16:20:33,472 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2023-10-18 16:20:33,502 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_3
+2023-10-18 16:20:33,917 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_4
+2023-10-18 16:20:33,959 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_4
+2023-10-18 16:20:34,277 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_3
+2023-10-18 16:20:34,345 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2023-10-18 16:20:34,479 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_5
+2023-10-18 16:20:34,493 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_5
+2023-10-18 16:20:34,513 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: getFileUsingGET_1
+2023-10-18 16:20:34,567 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_2
+2023-10-18 16:20:34,615 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_1
+2023-10-18 16:20:34,805 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_6
+2023-10-18 16:20:34,945 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_6
+2023-10-18 16:20:34,964 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingPOST_1
+2023-10-18 16:20:35,077 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_3
+2023-10-18 16:20:35,210 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_4
+2023-10-18 16:20:35,279 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_2
+2023-10-18 16:20:35,414 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_7
+2023-10-18 16:20:35,444 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_7
+2023-10-18 16:20:35,480 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_1
+2023-10-18 16:20:35,516 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByAnpConfigUsingGET_1
+2023-10-18 16:20:35,655 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_5
+2023-10-18 16:20:35,686 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_3
+2023-10-18 16:20:35,816 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_8
+2023-10-18 16:20:35,907 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_8
+2023-10-18 16:20:36,281 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingPOST_2
+2023-10-18 16:20:36,351 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: getFileUsingGET_2
+2023-10-18 16:20:36,407 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_4
+2023-10-18 16:20:36,461 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveDraftUsingPOST_1
+2023-10-18 16:20:36,540 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_3
+2023-10-18 16:20:36,582 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_4
+2023-10-18 16:20:36,741 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_9
+2023-10-18 16:20:36,776 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_9
+2023-10-18 16:20:36,857 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_2
+2023-10-18 16:20:36,889 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: getFileUsingGET_3
+2023-10-18 16:20:36,900 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_6
+2023-10-18 16:20:36,973 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_5
+2023-10-18 16:20:37,211 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_10
+2023-10-18 16:20:37,259 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_10
+2023-10-18 16:20:37,328 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_3
+2023-10-18 16:20:37,393 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_7
+2023-10-18 16:20:37,413 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_6
+2023-10-18 16:20:37,656 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_11
+2023-10-18 16:20:37,690 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_11
+2023-10-18 16:20:37,796 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listByTypeUsingGET_1
+2023-10-18 16:20:37,892 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_8
+2023-10-18 16:20:38,008 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_9
+2023-10-18 16:20:38,105 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_4
+2023-10-18 16:20:38,181 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_7
+2023-10-18 16:20:38,473 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_12
+2023-10-18 16:20:38,495 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_12
+2023-10-18 16:20:38,630 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingPOST_3
+2023-10-18 16:20:38,714 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: getFileUsingGET_4
+2023-10-18 16:20:38,783 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_5
+2023-10-18 16:20:38,871 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_10
+2023-10-18 16:20:38,914 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_5
+2023-10-18 16:20:38,971 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_8
+2023-10-18 16:20:39,109 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_13
+2023-10-18 16:20:39,232 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_13
+2023-10-18 16:20:39,322 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_4
+2023-10-18 16:20:39,409 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByManagementPlanIdUsingGET_1
+2023-10-18 16:20:39,473 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_11
+2023-10-18 16:20:39,631 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_9
+2023-10-18 16:20:39,745 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_14
+2023-10-18 16:20:39,812 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_14
+2023-10-18 16:20:39,928 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_5
+2023-10-18 16:20:40,144 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByManagementPlanIdUsingGET_2
+2023-10-18 16:20:40,327 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_12
+2023-10-18 16:20:40,418 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_10
+2023-10-18 16:20:40,571 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_15
+2023-10-18 16:20:40,646 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_15
+2023-10-18 16:20:40,709 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_6
+2023-10-18 16:20:40,772 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByManagementPlanIdUsingGET_3
+2023-10-18 16:20:40,812 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_13
+2023-10-18 16:20:40,843 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_11
+2023-10-18 16:20:41,030 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_16
+2023-10-18 16:20:41,100 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_16
+2023-10-18 16:20:41,147 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_7
+2023-10-18 16:20:41,343 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_14
+2023-10-18 16:20:41,409 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_12
+2023-10-18 16:20:41,752 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_17
+2023-10-18 16:20:42,016 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_17
+2023-10-18 16:20:42,045 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_8
+2023-10-18 16:20:42,125 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByMonitoringRecordIdUsingGET_1
+2023-10-18 16:20:42,164 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_6
+2023-10-18 16:20:42,375 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_15
+2023-10-18 16:20:42,478 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_13
+2023-10-18 16:20:42,981 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_18
+2023-10-18 16:20:43,036 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_18
+2023-10-18 16:20:43,221 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_9
+2023-10-18 16:20:43,833 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByMonitoringRecordIdUsingGET_2
+2023-10-18 16:20:44,018 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_16
+2023-10-18 16:20:44,099 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: savewithfilesUsingPOST_1
+2023-10-18 16:20:44,150 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_14
+2023-10-18 16:20:44,401 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_19
+2023-10-18 16:20:44,866 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_19
+2023-10-18 16:20:44,920 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_10
+2023-10-18 16:20:45,003 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByMonitoringRecordIdUsingGET_3
+2023-10-18 16:20:45,250 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_17
+2023-10-18 16:20:45,314 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: savewithfilesUsingPOST_2
+2023-10-18 16:20:45,417 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_15
+2023-10-18 16:20:45,468 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_20
+2023-10-18 16:20:45,492 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_20
+2023-10-18 16:20:45,572 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_11
+2023-10-18 16:20:45,602 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByAnpConfigUsingGET_2
+2023-10-18 16:20:45,632 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_18
+2023-10-18 16:20:45,654 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_16
+2023-10-18 16:20:45,741 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_21
+2023-10-18 16:20:45,774 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_21
+2023-10-18 16:20:45,871 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByOdIdUsingGET_1
+2023-10-18 16:20:46,001 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_19
+2023-10-18 16:20:46,047 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_17
+2023-10-18 16:20:46,149 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_22
+2023-10-18 16:20:46,193 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_22
+2023-10-18 16:20:46,271 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingPOST_4
+2023-10-18 16:20:46,321 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: getFileUsingGET_5
+2023-10-18 16:20:46,458 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listByTypeUsingGET_2
+2023-10-18 16:20:46,523 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveDraftUsingPOST_2
+2023-10-18 16:20:46,690 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_6
+2023-10-18 16:20:46,782 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_7
+2023-10-18 16:20:46,837 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateDarftUsingPUT_1
+2023-10-18 16:20:47,003 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_23
+2023-10-18 16:20:47,174 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_23
+2023-10-18 16:20:47,234 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByOdIdUsingGET_2
+2023-10-18 16:20:47,315 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_20
+2023-10-18 16:20:47,381 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_18
+2023-10-18 16:20:47,620 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_24
+2023-10-18 16:20:47,671 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_24
+2023-10-18 16:20:47,706 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_12
+2023-10-18 16:20:47,751 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByAnpConfigUsingPOST_1
+2023-10-18 16:20:47,786 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByAnpConfigUsingGET_3
+2023-10-18 16:20:47,826 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_21
+2023-10-18 16:20:47,904 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_19
+2023-10-18 16:20:47,963 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_25
+2023-10-18 16:20:48,002 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_25
+2023-10-18 16:20:48,082 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingPOST_5
+2023-10-18 16:20:48,105 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: getFileUsingGET_6
+2023-10-18 16:20:48,139 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_7
+2023-10-18 16:20:48,156 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listByAnpCodeUsingGET_1
+2023-10-18 16:20:48,238 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_22
+2023-10-18 16:20:48,268 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_8
+2023-10-18 16:20:48,337 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_20
+2023-10-18 16:20:48,472 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_26
+2023-10-18 16:20:48,521 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_26
+2023-10-18 16:20:48,601 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_13
+2023-10-18 16:20:48,716 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByManagementPlanIdUsingGET_4
+2023-10-18 16:20:48,803 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_23
+2023-10-18 16:20:48,877 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_21
+2023-10-18 16:20:48,949 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_27
+2023-10-18 16:20:49,000 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_27
+2023-10-18 16:20:49,083 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_14
+2023-10-18 16:20:49,172 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findBySitePlanIdUsingGET_1
+2023-10-18 16:20:49,238 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_24
+2023-10-18 16:20:49,377 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_22
+2023-10-18 16:20:49,705 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_28
+2023-10-18 16:20:49,781 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_28
+2023-10-18 16:20:49,805 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_15
+2023-10-18 16:20:49,853 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByManagementPlanIdUsingGET_5
+2023-10-18 16:20:49,924 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_25
+2023-10-18 16:20:49,948 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_23
+2023-10-18 16:20:50,092 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_29
+2023-10-18 16:20:50,137 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_29
+2023-10-18 16:20:50,178 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_16
+2023-10-18 16:20:50,303 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByManagementPlanIdUsingGET_6
+2023-10-18 16:20:50,604 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_26
+2023-10-18 16:20:50,624 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_24
+2023-10-18 16:20:50,776 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_30
+2023-10-18 16:20:50,802 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_30
+2023-10-18 16:20:50,818 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_17
+2023-10-18 16:20:50,881 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByMonitoringRecordIdUsingGET_4
+2023-10-18 16:20:51,002 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_27
+2023-10-18 16:20:51,049 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_25
+2023-10-18 16:20:51,202 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_31
+2023-10-18 16:20:51,241 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_31
+2023-10-18 16:20:51,273 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_18
+2023-10-18 16:20:51,371 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_28
+2023-10-18 16:20:51,429 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_26
+2023-10-18 16:20:51,910 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_32
+2023-10-18 16:20:51,942 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_32
+2023-10-18 16:20:52,042 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_19
+2023-10-18 16:20:52,310 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findBySupervisionRecordIdUsingGET_1
+2023-10-18 16:20:52,603 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_29
+2023-10-18 16:20:52,625 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_27
+2023-10-18 16:20:52,885 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_33
+2023-10-18 16:20:52,941 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_33
+2023-10-18 16:20:53,176 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_30
+2023-10-18 16:20:53,259 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_28
+2023-10-18 16:20:53,827 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_34
+2023-10-18 16:20:53,863 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_34
+2023-10-18 16:20:53,903 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingGET_20
+2023-10-18 16:20:54,452 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: findByMonitoringRecordIdUsingGET_5
+2023-10-18 16:20:54,648 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_31
+2023-10-18 16:20:54,674 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: savewithfilesUsingPOST_3
+2023-10-18 16:20:54,733 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_29
+2023-10-18 16:20:54,880 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_35
+2023-10-18 16:20:54,942 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_35
+2023-10-18 16:20:54,953 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: finalizeUsingPUT_1
+2023-10-18 16:20:54,979 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listByTypeUsingGET_3
+2023-10-18 16:20:55,106 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_32
+2023-10-18 16:20:55,263 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_33
+2023-10-18 16:20:55,359 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_9
+2023-10-18 16:20:55,537 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_36
+2023-10-18 16:20:55,559 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: detailUsingGET_36
+2023-10-18 16:20:55,643 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: exportUsingPOST_6
+2023-10-18 16:20:55,678 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: getFileUsingGET_7
+2023-10-18 16:20:55,709 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_8
+2023-10-18 16:20:55,726 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_34
+2023-10-18 16:20:55,754 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_10
+2023-10-18 16:20:55,803 INFO [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_30
+2023-10-18 16:20:55,929 INFO [main] org.springframework.boot.StartupInfoLogger : Started ApiApplication in 67.026 seconds (JVM running for 68.905)
+2023-10-18 16:26:59,324 INFO [http-nio-8080-exec-3] org.apache.juli.logging.DirectJDKLog : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x03l0x9d0xaa50xcf0xdb0xfc0xe60xfd0xa10xdb#0xf50xfc0xba0xacj0xf70xec0xb1Q[0x1b}Q0x130x9f0xdd0xe40x99)0xbb ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-18 16:29:28,210 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-18 16:29:28,217 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2023-10-18 16:29:28,274 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.

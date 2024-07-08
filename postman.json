@@ -1,0 +1,7150 @@
+{
+	"info": {
+		"_postman_id": "eca88ba4-a469-46aa-a0de-707bac271c4d",
+		"name": "SERNANP - OD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21807001"
+	},
+	"item": [
+		{
+			"name": "Anp",
+			"item": [
+				{
+					"name": "anp_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/anp",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "anp_list-not-related",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/anp/list-not-related2",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anp",
+								"list-not-related2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "anp_list_by_modality",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/anp/list-by-modality/29",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anp",
+								"list-by-modality",
+								"29"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Modality",
+			"item": [
+				{
+					"name": "ModalityRequirement",
+					"item": [
+						{
+							"name": "modalityrequirement_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "item",
+											"value": "{\n    \"id\": 0,\n    \"modality\":{\n        \"id\": 40\n    },\n    \"templateVariables\":[\n      {\n        \"id\": 0,\n        \"code\": \"#actividad\",\n        \"name\": \"txt_actividad\"\n      },\n      {\n        \"id\": 0,\n        \"code\": \"#departamento\",\n        \"name\": \"txt_departamento\"\n      }\n    ],\n    \"code\": \"Formulario - F13\",\n    \"description\": \"DECLARACION JURADA\",\n    \"flagMandatory\": true,\n    \"documentName\": \"documento.docx\",\n    \"templateName\": \"plantilla.docx\",\n    \"hasPayment\": false,\n    \"hasForm\": true,\n    \"formPath\": \"/modality/controller\"\n}",
+											"type": "text"
+										},
+										{
+											"key": "documentFile",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "templateFile",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}/modality/requirement/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"requirement",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityrequirement_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "item",
+											"value": "{\n    \"id\": 97,\n    \"modality\":{\n        \"id\": 40\n    },\n    \"templateVariables\":[\n      {\n        \"id\": 30,\n        \"code\": \"#actividad2\",\n        \"name\": \"txt_actividad2\"\n      },\n      {\n        \"id\": 31,\n        \"code\": \"#departamento2\",\n        \"name\": \"txt_departamento2\"\n      }\n    ],\n    \"code\": \"Formulario - F13 - actualizacion\",\n    \"description\": \"DECLARACION JURADA - update\",\n    \"flagMandatory\": true,\n    \"documentName\": \"documento2.docx\",\n    \"templateName\": \"plantilla2.docx\",\n    \"hasPayment\": false,\n    \"hasForm\": true,\n    \"formPath\": \"/modality/controller\"\n}",
+											"type": "text"
+										},
+										{
+											"key": "documentFile",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "templateFile",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}/modality/requirement",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"requirement"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityrequirement_listbymodality",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/modality/requirement/list-by-modality/12",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"requirement",
+										"list-by-modality",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityrequirement_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/modality/requirement/98",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"requirement",
+										"98"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityrequirement_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/modality/requirement/98",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"requirement",
+										"98"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityrequirement_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": {\r\n        \"id\": 0\r\n        },\r\n    \"flagValidity\":null,\r\n    \"flagDraft\":null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/modality/requirement/export/12",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"requirement",
+										"export",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityrequirement_downloadFile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/modality/requirement/download-file/a903e9b8-1d40-4044-90ec-decd802f8155",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"requirement",
+										"download-file",
+										"a903e9b8-1d40-4044-90ec-decd802f8155"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ModalityStage",
+					"item": [
+						{
+							"name": "modalitystage_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"modality\":{\r\n        \"id\": 155\r\n    },\r\n    \"state\":{\r\n        \"id\": 42\r\n    },\r\n    \"order\": 1,\r\n    \"name\": \"Etapa 1: solicitud\",\r\n    \"flagMandatory\": true,\r\n    \"flagAdministered\": false,\r\n    \"term\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/modality/stage/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"stage",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalitystage_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"modality\":{\r\n        \"id\": 12\r\n    },\r\n    \"state\":{\r\n        \"id\": 42\r\n    },\r\n    \"order\": 1,\r\n    \"name\": \"Etapa I: solicitud\",\r\n    \"flagMandatory\": true,\r\n    \"flagAdministered\": false,\r\n    \"term\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/modality/stage",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"stage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalitystage_listbymodality",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/modality/stage/list-by-modality/12",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"stage",
+										"list-by-modality",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalitystage_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/modality/stage/14",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"stage",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalitystage_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/modality/stage/6",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"stage",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalitystage_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": {\r\n        \"id\": 0\r\n        },\r\n    \"flagValidity\":null,\r\n    \"flagDraft\":null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/modality/stage/export/12",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"modality",
+										"stage",
+										"export",
+										"12"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "modality_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n   \"id\":0,\n   \"type\":{\n      \"id\":1\n   },\n   \"state\":{\n      \"id\":41\n   },\n   \"acronym\":\"RC-1\",\n   \"description\":\"Descripcion\",\n   \"sustentationDocumentName\":\"prueba.pdf\",\n   \"shortName\":\"nombre corto\",\n   \"titleEnables\":\"titulo habilita\",\n   \"validFrom\":\"2023-05-01\",\n   \"validUntil\":\"2025-05-30\",\n   \"flagValidity\":true,\n   \"flagDraft\":true,\n   \"flagPDA\":false,\n   \"flagPDV\":false,\n   \"flagTupa\":false,\n   \"tupaDescription\":\"\",\n   \"isNoMonetary\":false\n}",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/modality",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n   \"id\":51,\n   \"type\":{\n      \"id\":1\n   },\n   \"state\":{\n      \"id\":41\n   },\n   \"acronym\":\"RC-1\",\n   \"description\":\"Descripcion\",\n   \"sustentationDocumentName\":\"prueba.pdf\",\n   \"shortName\":\"nombre corto\",\n   \"titleEnables\":\"titulo habilita\",\n   \"validFrom\":\"2023-05-01\",\n   \"validUntil\":\"2023-05-30\",\n   \"flagValidity\":true,\n   \"flagDraft\":true,\n   \"flagPDA\":false,\n   \"flagPDV\":false,\n   \"flagTupa\":false,\n   \"tupaDescription\":\"\",\n   \"isNoMonetary\":false\n}",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/modality",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/modality",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_list-by-type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/modality/list-by-type/18",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality",
+								"list-by-type",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/modality/37",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality",
+								"37"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/modality/39",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality",
+								"39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\"type\": {\"id\":0},\"state\": {\"id\":0},\"flagValidity\":null,\"flagDraft\":null}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"100\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/modality/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_list-related-anpconfig-by-type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/modality/list-related-anpconfig/19",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality",
+								"list-related-anpconfig",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_export",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": {\r\n        \"id\": 0\r\n    },\r\n    \"state\": {\r\n        \"id\": 0\r\n    },\r\n    \"flagValidity\":null,\r\n    \"flagDraft\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/modality/export",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality",
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_downloadFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/modality/download-file/354cb143-1470-4693-9ba0-372fdb554232",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality",
+								"download-file",
+								"354cb143-1470-4693-9ba0-372fdb554232"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modality_list-by-tupa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/modality/list-by-tupa/false",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"modality",
+								"list-by-tupa",
+								"false"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OD",
+			"item": [
+				{
+					"name": "OdDocument",
+					"item": [
+						{
+							"name": "oddocument_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"od\": {\r\n        \"id\": 5\r\n    },\r\n    \"modalityStage\": {\r\n        \"id\": 2\r\n    },\r\n    \"cut\": \"1684-2023\",\r\n    \"documentName\": \"prueba.txt\",\r\n    \"documentDate\": \"2023-05-26\",\r\n    \"receptionDate\": \"2023-05-30\",\r\n    \"derivationDate\": \"2023-06-10\",\r\n    \"forwardsName\": \"Oficina 1\",\r\n    \"receivesName\": \"Oficina 2\",\r\n    \"attentionDay\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/document/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"document",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "oddocument_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 2,\r\n    \"od\": {\r\n        \"id\": 1\r\n    },\r\n    \"modalityStage\": {\r\n        \"id\": 2\r\n    },\r\n    \"cut\": \"1684-2023\",\r\n    \"documentName\": \"prueba.txt\",\r\n    \"documentDate\": \"2023-05-26\",\r\n    \"receptionDate\": \"2023-05-30\",\r\n    \"derivationDate\": \"2023-06-10\",\r\n    \"forwardsName\": \"Oficina 1\",\r\n    \"receivesName\": \"Oficina 2\",\r\n    \"attentionDay\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/document",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"document"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "oddocument_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/od/document/3",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"document",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "oddocument_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/od/document/2",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"document",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "oddocument_listbyod",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/document/list-by-od/5",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"document",
+										"list-by-od",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Addendum",
+					"item": [
+						{
+							"name": "addendum_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "item",
+											"value": "{\n    \"id\": 0,\n    \"od\": {\n        \"id\": 942\n    },\n    \"addendumType\": {\n        \"id\": 274\n    },\n    \"order\": 1,\n    \"name\": \"Adenda 1\",\n    \"emissionDate\": \"2023-05-26\",\n    \"endDate\": \"2028-05-26\",\n    \"duration\": \"5 años\",\n    \"subscriptionDate\": \"2025-09-01\",\n    \"flagSignature\": false,,\n    \"description\": \"prueba.pdf\",\n    \"documentName\": \"prueba.pdf\"\n}",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/addendum/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"addendum",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addendum_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "item",
+											"value": "{\n    \"id\": 9,\n    \"od\": {\n        \"id\": 942\n    },\n    \"addendumType\": {\n        \"id\": 274\n    },\n    \"order\": 1,\n    \"name\": \"Adenda 1\",\n    \"emissionDate\": \"2023-05-26\",\n    \"endDate\": \"2028-05-26\",\n    \"duration\": \"5 años\",\n    \"subscriptionDate\": \"2025-09-01\",\n    \"flagSignature\": false,\n    \"description\": \"descripcion prueba\",\n    \"documentName\": \"prueba.pdf\"\n}",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/addendum",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"addendum"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addendum_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/od/addendum/24",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"addendum",
+										"24"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addendum_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/od/addendum/3",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"addendum",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addendum_listbyod",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/addendum/list-by-od/942",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"addendum",
+										"list-by-od",
+										"942"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addendum_downloadFile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/addendum/download-file/2185734",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"addendum",
+										"download-file",
+										"2185734"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Compromise",
+					"item": [
+						{
+							"name": "compromiseMonetary_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"od\": {\r\n        \"id\": 83\r\n    },\r\n    \"compromiseMonetaryType\": {\r\n        \"id\": 5\r\n    },\r\n    \"resource\": {\r\n        \"id\": 3\r\n    },\r\n    \"periodicity\": {\r\n        \"id\": 9\r\n    },\r\n    \"paymentMethod\": {\r\n        \"id\": 11\r\n    },\r\n    \"currency\": {\r\n        \"id\": 68\r\n    },\r\n    \"amount\": 10.00,\r\n    \"year\": 2023,\r\n    \"observation\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/compromise/monetary",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"compromise",
+										"monetary"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "compromiseMonetary_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 27,\r\n    \"od\": {\r\n        \"id\": 83\r\n    },\r\n    \"compromiseMonetaryType\": {\r\n        \"id\": 5\r\n    },\r\n    \"resource\": {\r\n        \"id\": 3\r\n    },\r\n    \"periodicity\": {\r\n        \"id\": 9\r\n    },\r\n    \"paymentMethod\": {\r\n        \"id\": 11\r\n    },\r\n    \"currency\": {\r\n        \"id\": 69\r\n    },\r\n    \"amount\": 10.00,\r\n    \"year\": 2023,\r\n    \"observation\": \"actualizado\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/compromise/monetary",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"compromise",
+										"monetary"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "compromiseMonetary_listbyod",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/compromise/list-monetary-by-od/5",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"compromise",
+										"list-monetary-by-od",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "compromiseNoMonetary_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"od\": {\r\n    \"id\": 5\r\n  },\r\n  \"source\": {\r\n    \"id\": 96\r\n  },\r\n  \"compromiseNoMonetaryType\": {\r\n    \"id\": 5\r\n  },\r\n  \"responsible\": {\r\n    \"id\": 39\r\n  },\r\n  \"description\": \"Descripción\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "compromiseNoMonetary_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"od\": {\r\n    \"id\": 1\r\n  },\r\n  \"source\": {\r\n    \"id\": 96\r\n  },\r\n  \"compromiseNoMonetaryType\": {\r\n    \"id\": 5\r\n  },\r\n  \"responsible\": {\r\n    \"id\": 39\r\n  },\r\n  \"description\": \"Descripción\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "compromiseNoMonetary_listForOd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/list-for-od/6",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										"list-for-od",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "compromiseNoMonetary_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/115",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										"115"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "compromise_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/od/compromise/27",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"compromise",
+										"27"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "compromise_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/od/compromise/5",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"compromise",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Activity",
+					"item": [
+						{
+							"name": "odactivity_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"od\": {\r\n        \"id\": 5\r\n    },\r\n    \"activityType\": {\r\n        \"id\": 10\r\n    },\r\n    \"activity\": {\r\n        \"id\": 15\r\n    },\r\n    \"observation\": \"Pendiente\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/activity/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"activity",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "odactivity_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"od\": {\r\n        \"id\": 5\r\n    },\r\n    \"activityType\": {\r\n        \"id\": 10\r\n    },\r\n    \"activity\": {\r\n        \"id\": 15\r\n    },\r\n    \"observation\": \"Terminado\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/activity",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"activity"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "odactivity_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/od/activity/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"activity",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "odactivity_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/od/activity/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"activity",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "odactivity_listbyod",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/od/activity/list-by-od/96",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"od",
+										"activity",
+										"list-by-od",
+										"96"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "od_save-draft",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n    \"id\": 0,\n    \"type\": {\n        \"id\": 1\n    },\n    \"modality\": null,\n    \"state\": {\n        \"id\": null\n    },\n    \"beneficiary\": {\n        \"id\": 0\n    },\n    \"resolutionType\": {\n        \"id\": 64\n    },\n    \"sitePlan\": {\n        \"id\": 5\n    },\n    \"managementPlan\": {\n        \"id\": 0\n    },\n    \"description\": \"titulo largo\",\n    \"anpConfigIds\": null,\n    \"sectorIds\": null,\n    \"polygonIds\": null,\n    \"resourceAnpConfigIds\": \"5,7\",\n    \"startDate\": \"2023-05-01\",\n    \"endDate\": \"2023-05-30\",\n    \"titleNumber\": \"NR-0002\",\n    \"titleDocumentName\": \"prueba.pdf\",\n    \"titleStartDate\": \"2022-07-01\",\n    \"titleEndDate\": \"2023-08-28\",\n    \"duration\": 29,\n    \"flagSignature\": null,\n    \"resolutionNumber\": \"resol-00014\",\n    \"resolutionDocumentName\": \"prueba.txt\",\n    \"signatureDate\": \"2023-05-11\",\n    \"digitalRoute\": \"temp/carpeta\",\n    \"digitalRouteId\": \"2185734\",\n    \"flagPlan\": false,\n    \"maleBeneficiary\": 29,\n    \"femaleBeneficiary\": 40\n}",
+									"type": "text"
+								},
+								{
+									"key": "resolutionFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "titleRouteFile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/save-draft",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"save-draft"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "od_update-darft",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n    \"id\": 82,\n    \"type\": {\n        \"id\": 1\n    },\n    \"modality\": {\n        \"id\": 6\n    },\n    \"state\": {\n        \"id\": 1\n    },\n    \"beneficiary\": {\n        \"id\": 1\n    },\n    \"resolutionType\": {\n        \"id\": 64\n    },\n    \"sitePlan\": {\n        \"id\": 1\n    },\n    \"managementPlan\": {\n        \"id\": 0\n    },\n    \"description\": \"titulo largo actualizado\",\n    \"resourceAnpConfigIds\": \"5,7\",\n    \"startDate\": null,\n    \"endDate\": \"2023-05-30\",\n    \"titleNumber\": \"NR-0004\",\n    \"titleDocumentName\": \"prueba.pdf\",\n    \"titleStartDate\": \"2023-06-01\",\n    \"titleEndDate\": \"2023-06-30\",\n    \"duration\": 29,\n    \"flagSignature\": true,\n    \"resolutionNumber\": null,\n    \"resolutionDocumentName\": \"prueba.txt\",\n    \"signatureDate\": null,\n    \"digitalRouteId\": \"2185734\",\n    \"flagPlan\": false,\n    \"maleBeneficiary\": 29,\n    \"femaleBeneficiary\": 40\n}",
+									"type": "text"
+								},
+								{
+									"key": "resolutionFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "titleRouteFile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/update-draft",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"update-draft"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "od_update-finalize",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n    \"id\": 23,\n    \"type\": {\n        \"id\": 18\n    },\n    \"modality\": {\n        \"id\": 1\n    },\n    \"state\": {\n        \"id\": 1\n    },\n    \"beneficiary\": {\n        \"id\": 1\n    },\n    \"resolutionType\": {\n        \"id\": 64\n    },\n    \"sitePlan\": {\n        \"id\": 1\n    },\n    \"managementPlan\": {\n        \"id\": 0\n    },\n    \"anpConfigIds\": \"1,2\",\n    \"sectorIds\": \"RN102\",\n    \"polygonIds\": \"RN102_1,RN102_2\",\n    \"resourceAnpConfigIds\": \"1\",\n    \"code\": \"123123\",\n    \"description\": \"Des \",\n    \"startDate\": \"2023-07-28\",\n    \"endDate\": \"2023-07-19\",\n    \"flagValid\": true,\n    \"titleNumber\": \"NR-0002\",\n    \"titleDocumentName\": \"prueba.pdf\",\n    \"titleStartDate\": \"2023-07-28\",\n    \"titleEndDate\": \"2023-08-28\",\n    \"duration\": 0,\n    \"flagSignature\": true,\n    \"resolutionNumber\": \"40392025\",\n    \"resolutionDocumentName\": \"ENRIQUE NELSON JUAN DE DIOS VALENCIA\",\n    \"digitalRoute\": null,\n    \"signatureDate\": \"2023-08-28\",\n    \"flagDraft\": true,\n    \"ubigeo\": null,\n    \"digitalRouteId\": \"2185734\",\n    \"flagPlan\": false,\n    \"maleBeneficiary\": 29,\n    \"femaleBeneficiary\": 40\n}",
+									"type": "text"
+								},
+								{
+									"key": "resolutionFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "titleRouteFile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/update-finalize",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"update-finalize"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "od_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/od/96",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"96"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "od_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/od/160",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "od_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n    \"state\": {\n        \"id\":0\n    },\n    \"type\": {\n        \"id\":0\n    },\n    \"modality\": {\n        \"id\":0\n    },\n    \"beneficiary\": {\n        \"id\":0\n    },\n    \"code\":null,\n    \"anpConfigIds\":null,\n    \"resourceAnpConfigIds\": null\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "od_search2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state\": {\r\n        \"id\":0\r\n    },\r\n    \"type\": {\r\n        \"id\":0\r\n    },\r\n    \"modality\": {\r\n        \"id\":3\r\n    },\r\n    \"code\":null,\r\n    \"anpConfigIds\":null,\r\n    \"resourceAnpConfigIds\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/search2",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"search2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "od_export",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state\": {\r\n        \"id\":0\r\n    },\r\n    \"type\": {\r\n        \"id\":0\r\n    },\r\n    \"modality\": {\r\n        \"id\":0\r\n    },\r\n    \"beneficiary\": {\r\n        \"id\":0\r\n    },\r\n    \"code\":null,\r\n    \"anpConfigIds\":null,\r\n    \"resourceAnpConfigIds\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/export",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "od_downloadFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/download-file/2185734",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"download-file",
+								"2185734"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "od_list-by-type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/list-by-type/19",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"list-by-type",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save_external",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"srl_id_doc_recepcion\":27740,\r\n   \"id_tipo_tramite\":\"02\",\r\n   \"id_tipo_tramite_proced\":32,\r\n   \"id_tipo_doc\":\"003\",\r\n   \"var_num_doc\":\"JRR\",\r\n   \"int_num_folios\":1,\r\n   \"var_persona_firma_doc\":\"USCA SANDOVAL KRISTY DOMINO ADELAIDA\",\r\n   \"var_remitente_doc\":\"USCA SANDOVAL KRISTY DOMINO ADELAIDA\",\r\n   \"id_oficina_recepciona\":\"90000017\",\r\n   \"var_persona_recepciona_doc\":\"ARIVERA\",\r\n   \"var_correo_noti\":\"kusca@sernanp.gob.pe\",\r\n   \"var_asunto\":\"PIER PRUEBA\",\r\n   \"var_uuid\":\"\",\r\n   \"id_anp_cod\":null,\r\n   \"tcodi\":null,\r\n   \"srl_ticket\":null,\r\n   \"estado_ticket\":null,\r\n   \"des_est_ticket\":null,\r\n   \"id_medio\":null,\r\n   \"var_declaracion\":null,\r\n   \"anp_codigos\":null,\r\n   \"ind_noti_conf\":null,\r\n   \"bol_tipo_otorgamiento\":true,\r\n   \"srl_id_usuario\":6,\r\n   \"srl_id_usuario_registra\":6,\r\n   \"listFiles\":[\r\n      {\r\n         \"srl_id_archivo\":null,\r\n         \"fileName\":\"prueba.pdf\",\r\n         \"fileNameSave\":\"1712866660897.pdf\",\r\n         \"contentType\":\"application/pdf\",\r\n         \"tamano\":\"25.03 KB\",\r\n         \"url\":\"/opt/tomcat/webapps/documentos/mpv/27740/1712866660897.pdf\",\r\n         \"success\":false,\r\n         \"message\":null,\r\n         \"fileNew\":false,\r\n         \"int_estado\":1,\r\n         \"id_replace\":50227,\r\n         \"int_replace\":0,\r\n         \"var_observacion_file\":\"\",\r\n         \"ind_ruta_tipo_file\":null,\r\n         \"formName\":null\r\n      }\r\n   ],\r\n   \"anps\":[\r\n    {        \r\n        \"anp_id\": 41,        \r\n        \"anp_codi\": \"RN08\",\r\n        \"polygon\": {\r\n            \"id\": 1,            \r\n            \"code\": \"RN03-27\"\r\n        }\r\n    },\r\n    {        \r\n        \"anp_id\": 41,        \r\n        \"anp_codi\": \"RN08\",\r\n        \"polygon\": {            \r\n            \"id\": 3,            \r\n            \"code\": \"RN04-19\"\r\n        }\r\n    }      \r\n   ],\r\n   \"formularios\":{\r\n      \"formPago\":{\r\n          \"srl_id\":0,\r\n          \"int_forma_pago\":291,\r\n          \"num_comprobante\":\"12312\",\r\n          \"dte_comprobante\":\"2024-04-25\",\r\n          \"int_importe\":12345.2\r\n      },\r\n      \"form1\":{\r\n          \"srl_id\":0,\r\n          \"var_desc\":\"aaaaaaaaaaa\",\r\n          \"int_departamento\":\"02\",\r\n          \"int_provincia\":\"0201\",\r\n          \"int_distrito\":\"020102\",\r\n          \"int_anio\":4,\r\n          \"int_meses\":4,\r\n          \"var_num_res\":\"areasd\",\r\n          \"var_num_res_jef\":\"21231as2dasd\"\r\n      },\r\n      \"form10\":{\r\n          \"srl_id\":0,\r\n          \"var_desc\":\"asdasdasd\",\r\n          \"int_departamento\":\"01\",\r\n          \"int_provincia\":\"0101\",\r\n          \"int_distrito\":\"010101\",\r\n          \"int_meses\":4,\r\n          \"var_num_res_jef\":\"asdasdasd\"\r\n      },\r\n      \"form9\":{\r\n          \"srl_id\":0,\r\n          \"var_desc\":\"asdasdasdasd\",\r\n          \"int_departamento\":\"01\",\r\n          \"int_provincia\":\"0101\",\r\n          \"int_distrito\":\"010101\",\r\n          \"int_anio\":4,\r\n          \"int_meses\":3,\r\n          \"var_num_res_jef\":\"asdasd\"\r\n      },\r\n      \"form2\":{\r\n          \"srl_id\":0,\r\n          \"var_nombre\":\"zxczxczxc\",\r\n          \"var_desc\":\"zxczxczxc\",\r\n          \"int_departamento\":\"01\",\r\n          \"int_provincia\":\"0101\",\r\n          \"int_distrito\":\"010103\",\r\n          \"int_anio\":3,\r\n          \"int_meses\":2,\r\n          \"var_plan_sitio\":\"plan \"\r\n      },\r\n      \"form7\":{\r\n          \"srl_id\":0,\r\n          \"var_proyecto\":\"asdasd\",\r\n          \"var_desc\":\"sdasdasd\",\r\n          \"int_departamento\":\"02\",\r\n          \"int_provincia\":\"0201\",\r\n          \"int_distrito\":\"020101\",\r\n          \"int_anio\":2,\r\n          \"int_meses\":3,\r\n          \"var_inf_tec\":\"asdasd\",\r\n          \"var_carta\":\"asdasd\",\r\n          \"var_num_res_jef\":\"asdasd\"\r\n      },\r\n      \"form5\":{\r\n          \"srl_id\":0,\r\n          \"var_titulo\":\"asdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffff\",\r\n          \"var_desc\":\"asdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffff\",\r\n          \"var_objetivo\":\"asdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffff\",\r\n          \"dte_inicio\":\"2024-04-25\",\r\n          \"dte_fin\":\"2024-04-25\"\r\n      },\r\n      \"form3\":{\r\n          \"srl_id\":0,\r\n          \"var_desc\":\"aasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffff\",\r\n          \"int_departamento\":\"01\",\r\n          \"int_provincia\":\"0101\",\r\n          \"int_distrito\":\"010101\",\r\n          \"int_anio\":2,\r\n          \"int_meses\":3,\r\n          \"var_num_res_jef\":\"asdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffff\"\r\n      },\r\n      \"form8\":{\r\n          \"srl_id\":0,\r\n          \"var_desc\":\"asdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffff\",\r\n          \"int_departamento\":\"01\",\r\n          \"int_provincia\":\"0101\",\r\n          \"int_distrito\":\"010101\",\r\n          \"int_anio\":4,\r\n          \"int_meses\":3,\r\n          \"var_inf_tec\":\"asdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffff\",\r\n          \"var_num_res_jef\":\"asdasdaffffffffffffffffffffffffffffffffffffffffasdasdaffffffffffffffffffffffffffffffffffffffff\"\r\n      }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/save-external",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"save-external"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getexternal",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"srl_id_doc_recepcion\":27711,\r\n   \"id_tipo_tramite\":\"02\",\r\n   \"id_tipo_tramite_proced\":\"32\",\r\n   \"id_tipo_doc\":\"003\",\r\n   \"var_num_doc\":\"12345\",\r\n   \"int_num_folios\":1,\r\n   \"var_persona_firma_doc\":\"USCA SANDOVAL KRISTY DOMINO ADELAIDA\",\r\n   \"var_remitente_doc\":\"USCA SANDOVAL KRISTY DOMINO ADELAIDA\",\r\n   \"id_oficina_recepciona\":\"90000017\",\r\n   \"var_persona_recepciona_doc\":\"MANUEL FRANCISCO CAMACHO VILLANUEVA\",\r\n   \"var_correo_noti\":\"kusca@sernanp.gob.pe\",\r\n   \"var_asunto\":\"Q\",\r\n   \"var_uuid\":\"\",\r\n   \"id_anp_cod\":null,\r\n   \"tcodi\":null,\r\n   \"srl_ticket\":null,\r\n   \"estado_ticket\":null,\r\n   \"des_est_ticket\":null,\r\n   \"id_medio\":null,\r\n   \"var_declaracion\":null,\r\n   \"anp_codigos\":null,\r\n   \"ind_noti_conf\":null,\r\n   \"bol_tipo_otorgamiento\":true,\r\n   \"srl_id_usuario\":6,\r\n   \"srl_id_usuario_registra\":6,\r\n   \"listFiles\":[\r\n      {\r\n         \"srl_id_archivo\":null,\r\n         \"fileName\":\"prueba.pdf\",\r\n         \"fileNameSave\":\"1711918740555.pdf\",\r\n         \"contentType\":\"application/pdf\",\r\n         \"tamano\":\"25.03 KB\",\r\n         \"url\":\"C:\\\\projects\\\\github\\\\archivos\\\\tmp\",\r\n         \"success\":true,\r\n         \"message\":\"Se agrego correctamente el archivo: prueba.pdf\",\r\n         \"fileNew\":true,\r\n         \"int_estado\":null,\r\n         \"id_replace\":null,\r\n         \"int_replace\":1,\r\n         \"var_observacion_file\":null,\r\n         \"ind_ruta_tipo_file\":null\r\n      }\r\n   ],\r\n   \"formularios\":{\r\n      \"form1\":{\r\n         \"srl_id\":0,\r\n         \"var_desc\":\"eqqeqe\",\r\n         \"int_departamento\":\"01\",\r\n         \"int_provincia\":\"0101\",\r\n         \"int_distrito\":\"010101\",\r\n         \"int_anio\":\"1\",\r\n         \"int_meses\":\"1\",\r\n         \"var_num_res\":\"q\",\r\n         \"var_num_res_jef\":\"q\"\r\n      },\r\n      \"form10\":{\r\n         \"srl_id\":0,\r\n         \"var_desc\":\"w\",\r\n         \"int_departamento\":\"90000029\",\r\n         \"int_provincia\":\"90000029\",\r\n         \"int_distrito\":\"90000029\",\r\n         \"int_meses\":\"1\",\r\n         \"var_num_res_jef\":\"\"\r\n      },\r\n      \"form9\":{\r\n         \"srl_id\":0,\r\n         \"var_desc\":\"aaaa\",\r\n         \"int_departamento\":\"90000029\",\r\n         \"int_provincia\":\"90000029\",\r\n         \"int_distrito\":\"90000029\",\r\n         \"int_anio\":\"1\",\r\n         \"int_meses\":\"1\",\r\n         \"var_num_res_jef\":\"\"\r\n      },\r\n      \"form2\":{\r\n         \"srl_id\":0,\r\n         \"var_nombre\":\"a\",\r\n         \"var_desc\":\"a\",\r\n         \"int_departamento\":\"01\",\r\n         \"int_provincia\":\"0101\",\r\n         \"int_distrito\":\"010101\",\r\n         \"int_anio\":\"1\",\r\n         \"int_meses\":\"1\",\r\n         \"var_plan_sitio\":\"aaaaaaaaa\"\r\n      },\r\n      \"form8\":{\r\n         \"srl_id\":0,\r\n         \"var_desc\":\"aaaa\",\r\n         \"int_departamento\":\"90000029\",\r\n         \"int_provincia\":\"90000017\",\r\n         \"int_distrito\":\"90000029\",\r\n         \"int_anio\":\"1\",\r\n         \"int_meses\":\"1\",\r\n         \"var_inf_tec\":\"a\",\r\n         \"var_num_res_jef\":\"\"\r\n      },\r\n      \"form3\":{\r\n         \"srl_id\":0,\r\n         \"var_desc\":\"a\",\r\n         \"int_departamento\":\"90000029\",\r\n         \"int_provincia\":\"90000029\",\r\n         \"int_distrito\":\"90000029\",\r\n         \"int_anio\":\"1\",\r\n         \"int_meses\":\"1\",\r\n         \"var_num_res_jef\":\"\"\r\n      },\r\n      \"form5\":{\r\n         \"srl_id\":0,\r\n         \"var_titulo\":\"1\",\r\n         \"var_desc\":\"1\",\r\n         \"var_objetivo\":\"1\",\r\n         \"dte_inicio\":\"20/10/10\",\r\n         \"dte_fin\":\"\"\r\n      },\r\n      \"form7\":{\r\n         \"srl_id\":0,\r\n         \"var_proyecto\":\"www\",\r\n         \"var_desc\":\"www\",\r\n         \"int_departamento\":\"90000029\",\r\n         \"int_provincia\":\"90000029\",\r\n         \"int_distrito\":\"90000029\",\r\n         \"int_anio\":\"111\",\r\n         \"int_meses\":\"11\",\r\n         \"var_inf_tec\":\"1\",\r\n         \"var_carta\":\"1\",\r\n         \"var_num_res_jef\":\"\"\r\n      }\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/od/get-for-external/27740",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"od",
+								"get-for-external",
+								"27740"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AnpConfig",
+			"item": [
+				{
+					"name": "ModalityAnp",
+					"item": [
+						{
+							"name": "modalityanp_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"anpConfig\": {\r\n        \"id\": 33\r\n    },\r\n    \"modality\":{\r\n        \"id\": 80\r\n    },\r\n    \"useType\": {\r\n        \"id\": 3\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/modality/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"modality",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityanp_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 20,\r\n    \"anpConfig\": {\r\n        \"id\": 10\r\n    },\r\n    \"modality\":{\r\n        \"id\": 21\r\n    },\r\n    \"useType\": {\r\n        \"id\": 23\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/modality",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"modality"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityanp_listbyconfiganp",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/modality/list-by-configanp/2",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"modality",
+										"list-by-configanp",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityanp_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/modality/20",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"modality",
+										"20"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityanp_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/modality/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"modality",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityanp_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/modality/export/10",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"modality",
+										"export",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityanp_listSectors",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"anpConfig\": {\r\n        \"code\": \"RN08\",\r\n        \"type\": {\r\n            \"id\": 19\r\n        }\r\n    },\r\n    \"modality\":{\r\n        \"id\": 145\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/modality/list-sectors",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"modality",
+										"list-sectors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modalityanp_listPolygons",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"anpConfig\": {\r\n        \"code\": \"RN08\",\r\n        \"sectorCode\": \"RN08-ST13\",\r\n        \"type\": {\r\n            \"id\": 19\r\n        }\r\n    },\r\n    \"modality\":{\r\n        \"id\": 145\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/modality/list-polygons",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"modality",
+										"list-polygons"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ActivityAnp",
+					"item": [
+						{
+							"name": "activityanp_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"anpConfig\": {\r\n        \"id\": 10\r\n    },\r\n    \"activityType\": {\r\n        \"id\": 6\r\n    },\r\n    \"activity\": {\r\n        \"id\": 15\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/activity",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"activity"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activityanp_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 15,\r\n    \"anpConfig\": {\r\n        \"id\": 10\r\n    },\r\n    \"activityType\": {\r\n        \"id\": 6\r\n    },\r\n    \"activity\": {\r\n        \"id\": 14\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/activity",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"activity"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activityanp_list-by-configanp",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/activity/list-by-configanp/1,2",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"activity",
+										"list-by-configanp",
+										"1,2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activityanp_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/activity/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"activity",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activityanp_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/activity/3",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"activity",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activityanp_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/activity/export/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"activity",
+										"export",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activityanp_listbyTypeAndAnpConfig",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"anpConfig\": {\r\n        \"type\": {\r\n            \"id\": 19\r\n        },\r\n        \"code\": \"RN08\",\r\n        \"sectorCode\": \"RN08-ST13\",\r\n        \"polygonCode\": null\r\n    },\r\n    \"activityType\": {\r\n        \"id\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/activity/list-by-type-and-anpconfig",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"activity",
+										"list-by-type-and-anpconfig"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activityanp_listTypeByAnpConfig",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"anpConfig\": {\r\n        \"type\": {\r\n            \"id\": 19\r\n        },\r\n        \"code\": \"RN10\",\r\n        \"sectorCode\": \"RN10-ST4\",\r\n        \"polygonCode\": null\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/activity/list-type-by-anpconfig",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"activity",
+										"list-type-by-anpconfig"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ResourceAnp",
+					"item": [
+						{
+							"name": "resourceanp_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"anpConfig\": {\r\n        \"id\": 33\r\n    },\r\n    \"resourceType\": {\r\n        \"id\": 2\r\n    },\r\n    \"resource\": {\r\n        \"id\": 20\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/resource/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"resource",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resourceanp_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 10,\r\n    \"anpConfig\": {\r\n        \"id\": 33\r\n    },\r\n    \"resourceType\": {\r\n        \"id\": 2\r\n    },\r\n    \"resource\": {\r\n        \"id\": 20\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/resource",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"resource"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resourceanp_listbyconfiganp",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/resource/list-by-configanp/3",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"resource",
+										"list-by-configanp",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resourceanp_listbyconfiganpcode",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/resource/list-by-configanpcode/RN08",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"resource",
+										"list-by-configanpcode",
+										"RN08"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resourceanp_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/resource/2",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"resource",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resourceanp_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/resource/37",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"resource",
+										"37"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resourceanp_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/resource/export/10",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"resource",
+										"export",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resourceanp_downloadFile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/resource/download-file/ccfd5db0-6c41-4192-b2ec-c247aa38ae49",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"resource",
+										"download-file",
+										"ccfd5db0-6c41-4192-b2ec-c247aa38ae49"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resourceanp_listByAnpConfig",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"anpConfig\": {\r\n        \"type\": {\r\n            \"id\": 18\r\n        },\r\n        \"code\": \"RN08\",\r\n        \"sectorCode\": \"11\",\r\n        \"polygonCode\": \"1\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/resource/list-by-anpconfig",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"resource",
+										"list-by-anpconfig"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "NormConductAnp",
+					"item": [
+						{
+							"name": "normconductanp_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"anpConfig\": {\r\n        \"id\": 1\r\n    },\r\n    \"normType\": {\r\n        \"id\": 7\r\n    },\r\n    \"audience\": {\r\n        \"id\": 30\r\n    },\r\n    \"shortName\": \"norma conducta anp 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/norm/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"norm",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "normconductanp_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"anpConfig\": {\r\n        \"id\": 1\r\n    },\r\n    \"normType\": {\r\n        \"id\": 7\r\n    },\r\n    \"audience\": {\r\n        \"id\": 30\r\n    },\r\n    \"shortName\": \"norma conducta anp 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/norm",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"norm"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "normconductanp_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/norm/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"norm",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "normconductanp_listbyconfiganp",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/norm/list-by-configanp/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"norm",
+										"list-by-configanp",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "normconductanp_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/norm/2",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"norm",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "normconductanp_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/anpconfig/norm/export/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"anpconfig",
+										"norm",
+										"export",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "anpconfig_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"type\": {\r\n        \"id\": 20\r\n    },\r\n    \"code\": \"RN03\",\r\n    \"anpId\": 1,\r\n    \"name\": \"RN Tambopata\",\r\n    \"sectorCode\": \"\",\r\n    \"sectorName\": \"\",\r\n    \"polygonCode\": \"\",\r\n    \"polygonName\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/anpconfig/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anpconfig",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "anpconfig_list-by-modality",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/anpconfig/list-by-modality/145",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anpconfig",
+								"list-by-modality",
+								"145"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "anpconfig_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/anpconfig/10",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anpconfig",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "anpconfig_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/anpconfig/46",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anpconfig",
+								"46"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "anpconfig_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/anpconfig/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anpconfig",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "anpconfig_search-related",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\":{\r\n        \"id\": 18\r\n    },\r\n    \"code\": \"\",\r\n    \"sectorCode\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/anpconfig/search-related",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anpconfig",
+								"search-related"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "anpconfig_detail-by-anpconfig",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": {\r\n        \"id\": 18\r\n    },\r\n    \"code\": \"RN08\",\r\n    \"anpId\": 1,\r\n    \"name\": \"RN Tambopata\",\r\n    \"sectorCode\": \"RN08_01\",\r\n    \"sectorName\": \"Sector Prueba\",\r\n    \"polygonCode\": \"\",\r\n    \"polygonName\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/anpconfig/detail-by-anpconfig",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"anpconfig",
+								"detail-by-anpconfig"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MasterList",
+			"item": [
+				{
+					"name": "masterlist_listByCode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/listdetail/list-by-code/15",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listdetail",
+								"list-by-code",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "masterlist_listByType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/listdetail/list-by-type/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listdetail",
+								"list-by-type",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ListHeader",
+			"item": [
+				{
+					"name": "ListHeader_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n  \"code\": 0,\n  \"name\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/listheader/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listheader",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListHeader_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"Lista cabecera\",\r\n  \"description\": \"Lista de prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/listheader/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listheader",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListHeader_update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 43,\r\n  \"name\": \"Lista cabecera - actualizado\",\r\n  \"description\": \"Lista de prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/listheader/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listheader",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListHeader_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/listheader/43",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listheader",
+								"43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListHeader_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/listheader/43",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listheader",
+								"43"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ListDetail",
+			"item": [
+				{
+					"name": "ListDetail_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n  \"listType\": {\n    \"id\": 44\n  },\n  \"listDetail\": {\n    \"id\": 0\n  },\n  \"name\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/listdetail/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listdetail",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListDetail_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"listType\": {\r\n    \"id\": 44\r\n  },\r\n  \"listDetail\": {\r\n    \"id\": 0\r\n  },\r\n  \"name\": \"item 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/listdetail/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listdetail",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListDetail_update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"code\": 4,\r\n  \"name\": \"Lista cabecera\",\r\n  \"description\": \"Lista de prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/listdetail/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listdetail",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListDetail_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/listdetail/280",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listdetail",
+								"280"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListDetail_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/listdetail/280",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listdetail",
+								"280"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListDetail_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n  \"code\": 0,\n  \"name\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/listheader/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listheader",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListDetail_listByType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/listdetail/list-by-type/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"listdetail",
+								"list-by-type",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Beneficiary",
+			"item": [
+				{
+					"name": "beneficiary_findbydocumentnumber",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documentNumber\": \"05069619\",\r\n    \"name\": \"SENANP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/beneficiary/find-by-document-number",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"beneficiary",
+								"find-by-document-number"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "beneficiary_list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documentNumber\": \"05069619\",\r\n    \"name\": \"SENANP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/beneficiary",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"beneficiary"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ManagementPlan",
+			"item": [
+				{
+					"name": "ManagementArea",
+					"item": [
+						{
+							"name": "ManagementArea_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"managementPlan\": {\r\n    \"id\": 59\r\n  },\r\n  \"modality\": {\r\n    \"id\": 19\r\n  },\r\n  \"code\": \"459\",\r\n  \"name\": \"Plan de Manejo forestal de “bolaina” Guazuma crinita de las comunidades de Atenas, San Francisco, San Antonio, 06 de Mayo y Nueva Esperanza, sector Marañon de la Reserva Nacional Pacaya Samiria - 459\",\r\n  \"hectares\": 102.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/management-area/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"management-area",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ManagementArea_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"managementPlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"modality\": {\r\n    \"id\": 15\r\n  },\r\n  \"code\": \"AREA01\",\r\n  \"name\": \"Area manejo 1\",\r\n  \"hectares\": 102.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/management-area",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"management-area"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ManagementArea_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/management-plan/management-area/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"management-area",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ManagementArea_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/management-plan/management-area/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"management-area",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ManagementArea_listbymanagementPlan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/management-area/list-by-pm/3",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"management-area",
+										"list-by-pm",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ManagementArea_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/management-area/export/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"management-area",
+										"export",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PermittedActivity",
+					"item": [
+						{
+							"name": "PermittedActivity_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"activityType\": {\r\n    \"id\": 7\r\n  },\r\n  \"activity\": {\r\n    \"id\": 9\r\n  },\r\n  \"managementPlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"description\": \"Recolecció y acopio de recursos\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/permitted-activity/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"permitted-activity",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"activityType\": {\r\n    \"id\": 7\r\n  },\r\n  \"activity\": {\r\n    \"id\": 9\r\n  },\r\n  \"managementPlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"description\": \"Recolecció y acopio de recursos\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/permitted-activity",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"permitted-activity"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/management-plan/permitted-activity/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"permitted-activity",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/management-plan/permitted-activity/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"permitted-activity",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_listbyManagementPlan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/permitted-activity/list-by-pm/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"permitted-activity",
+										"list-by-pm",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/permitted-activity/export/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"permitted-activity",
+										"export",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Resource",
+					"item": [
+						{
+							"name": "Resource_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"managementPlan\": {\r\n    \"id\": 51\r\n  },\r\n  \"resourceType\": {\r\n    \"id\": 6\r\n  },\r\n  \"resource\": {\r\n    \"id\": 17\r\n  },\r\n  \"measurementUnit\": {\r\n    \"id\": 77\r\n  },\r\n  \"quota\": 2,\r\n  \"exploitationSeason\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/resource",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"resource"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resource_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"managementPlan\": {\r\n    \"id\": 50\r\n  },\r\n  \"resourceType\": {\r\n    \"id\": 6\r\n  },\r\n  \"resource\": {\r\n    \"id\": 17\r\n  },\r\n  \"measurementUnit\": {\r\n    \"id\": 77\r\n  },\r\n  \"quota\": 3,\r\n  \"exploitationSeason\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/resource",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"resource"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resource_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/management-plan/resource/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"resource",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resource_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/management-plan/resource/5",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"resource",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resource_listbyManagementPlan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/resource/list-by-pm/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"resource",
+										"list-by-pm",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resource_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/management-plan/resource/export/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"management-plan",
+										"resource",
+										"export",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "FiscalObligation",
+					"item": [
+						{
+							"name": "FiscalObligation_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"managementPlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"source\": {\r\n    \"id\": 92\r\n  },\r\n  \"description\": \"Descripción\",\r\n  \"characteristic\": \"aaa\",\r\n  \"executionTerm\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"managementPlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"source\": {\r\n    \"id\": 92\r\n  },\r\n  \"description\": \"Descripción - Actualizado 1\",\r\n  \"characteristic\": \"aaa\",\r\n  \"executionTerm\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_listByManagementPlan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/list-by-pm/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										"list-by-pm",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/fiscal-obligation/export-by-pm/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"fiscal-obligation",
+										"export-by-pm",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ManagementPlan_save-draft",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 0,\n  \"instrumentType\": {\n    \"id\": 15\n  },\n  \"anpCode\": \"RN02\",\n  \"anpName\": \"Reserva Natural 02\",\n  \"name\": \"Plan 2\",\n  \"startDate\": \"2023-08-06\",\n  \"endDate\": \"2023-09-06\",\n  \"flagValid\": true,\n  \"digitalRoute\": \"/main/java/pe/sernanp/ws_api\",\n  \"digitalRouteId\": \"2185734\",\n  \"resolution\": \"exp-00001.pdf\",\n  \"resolutionRouteId\": \"\",\n  \"managementPlanFile\": \"Archivo de plan de manejo.pdf\",\n  \"managementPlanFileId\": \"\",\n  \"compatibilityReportFile\": \"compatibilidad.pdf\",\n  \"compatibilityReportFileId\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "resolutionFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "managementPlanFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "compatibilityReportFile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/management-plan/save-draft",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"management-plan",
+								"save-draft"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ManagementPlan_update-draft",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 6,\n  \"instrumentType\": {\n    \"id\": 15\n  },\n  \"anpCode\": \"RN01\",\n  \"anpName\": \"Reserva Natural 01\",\n  \"name\": \"Plan 1\",\n  \"startDate\": \"2023-08-06\",\n  \"endDate\": \"2023-09-06\",\n  \"flagValid\": true,\n  \"digitalRoute\": \"/main/java/pe/sernanp/ws_api\",\n  \"digitalRouteId\": \"2185734\",\n  \"resolution\": \"exp-00001.pdf\",\n  \"resolutionRouteId\": \"\",\n  \"managementPlanFile\": \"Archivo de plan de manejo.pdf\",\n  \"managementPlanFileId\": \"\",\n  \"compatibilityReportFile\": \"compatibilidad.pdf\",\n  \"compatibilityReportFileId\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "resolutionFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "managementPlanFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "compatibilityReportFile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/management-plan/update-draft",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"management-plan",
+								"update-draft"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ManagementPlan_update-finalize",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 1,\n  \"instrumentType\": {\n    \"id\": 15\n  },\n  \"anpCode\": \"RN01\",\n  \"anpName\": \"Reserva Natural 01\",\n  \"name\": \"Plan 1\",\n  \"startDate\": \"2023-08-06\",\n  \"endDate\": \"2023-09-06\",\n  \"flagValid\": true,\n  \"digitalRoute\": \"/main/java/pe/sernanp/ws_api\",\n  \"digitalRouteId\": \"2185734\",\n  \"resolution\": \"exp-00001.pdf\",\n  \"resolutionRouteId\": \"\",\n  \"managementPlanFile\": \"Archivo de plan de manejo.pdf\",\n  \"managementPlanFileId\": \"\",\n  \"compatibilityReportFile\": \"compatibilidad.pdf\",\n  \"compatibilityReportFileId\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "resolutionFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "managementPlanFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "compatibilityReportFile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/management-plan/update-finalize",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"management-plan",
+								"update-finalize"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ManagementPlan_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/management-plan/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"management-plan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ManagementPlan_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/management-plan/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"management-plan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ManagementPlan_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\"instrumentType\": {\"id\": 0},\"anpCode\": \"\",\"name\": \"\",\"resourceTypeId\":0,\"resourceId\":0,\"flagValid\": null,\"resolution\": \"\",\"flagDraft\": null}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/management-plan/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"management-plan",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ManagementPlan_export",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"instrumentType\": {\r\n        \"id\": 0\r\n    },\r\n    \"resourceTypeId\":0,\r\n    \"resourceId\":0,\r\n    \"anpCode\": \"\",\r\n    \"name\": \"\",\r\n    \"flagValid\": null,\r\n    \"resolution\": \"\",\r\n    \"flagDraft\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/management-plan/export",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"management-plan",
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ManagementPlan_downloadFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/management-plan/download-file/2401873",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"management-plan",
+								"download-file",
+								"2401873"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SitePlan",
+			"item": [
+				{
+					"name": "TouristSector",
+					"item": [
+						{
+							"name": "TouristSector_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"sitePlan\": {\r\n    \"id\": 13\r\n  },\r\n  \"sectorArea\": {\r\n    \"id\": 23\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/tourist-sector/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"tourist-sector",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TouristSector_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 33,\r\n  \"sitePlan\": {\r\n    \"id\": 13\r\n  },\r\n  \"sectorArea\": {\r\n    \"id\": 23\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/tourist-sector",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"tourist-sector"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TouristSector_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/site-plan/tourist-sector/24",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"tourist-sector",
+										"24"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TouristSector_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/site-plan/tourist-sector/33",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"tourist-sector",
+										"33"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TouristSector_listbysitePlan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/tourist-sector/list-by-ps/11",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"tourist-sector",
+										"list-by-ps",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TouristSector_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/tourist-sector/export/13",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"tourist-sector",
+										"export",
+										"13"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GrantingPolygon",
+					"item": [
+						{
+							"name": "GrantingPolygon_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"sitePlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"useType\": {\r\n    \"id\": 16\r\n  },\r\n  \"spTouristSector\": {\r\n    \"id\": 15\r\n  },\r\n  \"polygon\": {\r\n    \"id\": 1\r\n  },\r\n  \"modalityIds\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GrantingPolygon_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"sitePlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"useType\": {\r\n    \"id\": 16\r\n  },\r\n  \"spTouristSector\": {\r\n    \"id\": 15\r\n  },\r\n  \"modalityIds\": \"\",\r\n  \"code\": \"code1\",\r\n  \"area\": \"area poligono\",\r\n  \"route\": \"/main/java/pe/sernanp\",\r\n  \"hectares\": 102.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GrantingPolygon_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon/37",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon",
+										"37"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GrantingPolygon_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GrantingPolygon_listbySitePlan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon/list-by-ps/11",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon",
+										"list-by-ps",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GrantingPolygon_listByTouristSector",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon/list-by-ts/4",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon",
+										"list-by-ts",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GrantingPolygon_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon/export/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon",
+										"export",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GrantingPolygon_listByConfig",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sitePlan\":{\r\n        \"id\": 2\r\n    },\r\n    \"spTouristSector\": {\r\n        \"code\": \"RN08-ST1\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon/list-by-config",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon",
+										"list-by-config"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GrantingPolygon_listByModalityId",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sitePlan\":{\r\n        \"id\": 10\r\n    },\r\n    \"modality\": {\r\n        \"id\": 31\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon/list-by-modality/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon",
+										"list-by-modality",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GrantingPolygon_listModalityByConfig",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sitePlan\":{\r\n        \"id\": 2\r\n    },\r\n    \"spTouristSector\": {\r\n        \"code\": \"\"\r\n    },\r\n    \"code\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/granting-polygon/list-modality-by-config",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"granting-polygon",
+										"list-modality-by-config"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PermittedActivity",
+					"item": [
+						{
+							"name": "PermittedActivity_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"sitePlan\": {\r\n    \"id\": 11\r\n  },\r\n  \"activityType\": {\r\n    \"id\": 1\r\n  },\r\n  \"activity\": {\r\n    \"id\": 2\r\n  },\r\n  \"modality\": {\r\n    \"id\": 29\r\n  },\r\n  \"grantingPolygonIds\": \"37,50\",\r\n  \"description\": \"anthony\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/permitted-activity/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"permitted-activity",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"grantingPolygon\": {\r\n    \"id\": 1\r\n  },\r\n  \"sitePlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"activityType\": {\r\n    \"id\": 7\r\n  },\r\n  \"activity\": {\r\n    \"id\": 9\r\n  },\r\n  \"modality\": {\r\n    \"id\": 15\r\n  },\r\n  \"description\": \"Descripción de actividades permitidas de plan de sitio\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/permitted-activity",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"permitted-activity"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/site-plan/permitted-activity/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"permitted-activity",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/site-plan/permitted-activity/18",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"permitted-activity",
+										"18"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_listbysitePlan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/permitted-activity/list-by-ps/11",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"permitted-activity",
+										"list-by-ps",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PermittedActivity_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/permitted-activity/export/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"permitted-activity",
+										"export",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "NormConduct",
+					"item": [
+						{
+							"name": "NormConduct_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"sitePlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"normType\": {\r\n    \"id\": 16\r\n  },\r\n  \"audience\": {\r\n    \"id\": 18\r\n  },\r\n  \"description\": \"Descripción de actividades permitidas de plan de sitio\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/norm-conduct/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"norm-conduct",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NormConduct_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"sitePlan\": {\r\n    \"id\": 1\r\n  },\r\n  \"normType\": {\r\n    \"id\": 16\r\n  },\r\n  \"audience\": {\r\n    \"id\": 18\r\n  },\r\n  \"description\": \"Descripción de actividades permitidas de plan de sitio\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/norm-conduct",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"norm-conduct"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NormConduct_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/site-plan/norm-conduct/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"norm-conduct",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NormConduct_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/site-plan/norm-conduct/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"norm-conduct",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NormConduct_listbysitePlan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/norm-conduct/list-by-ps/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"norm-conduct",
+										"list-by-ps",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NormConduct_export",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/site-plan/norm-conduct/export/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"site-plan",
+										"norm-conduct",
+										"export",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "sitePlan_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 0,\n  \"instrumentType\": {\n    \"id\": 15\n  },\n  \"sector\": {\n    \"id\": 22\n  },\n  \"anpCode\": \"RN08,RN10\",\n  \"name\": \"Plan 2\",\n  \"startDate\": \"2023-08-06\",\n  \"endDate\": \"2023-09-06\",\n  \"flagValid\": true,\n  \"digitalRoute\": \"/main/java/pe/sernanp/ws_api\",\n  \"digitalRouteId\": \"2185734\",\n  \"resolution\": \"exp-00001.pdf\",\n  \"resolutionRouteId\": \"\",\n  \"instrumentFile\": \"Archivo de plan de sitio.pdf\",\n  \"instrumentFileId\": \"\",\n  \"flagDraft\": true\n}",
+									"type": "text"
+								},
+								{
+									"key": "resolutionFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "instrumentFile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/site-plan",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"site-plan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sitePlan_update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 12,\n  \"instrumentType\": {\n    \"id\": 15\n  },\n  \"sector\": {\n    \"id\": 22\n  },\n  \"anpCode\": \"RN01\",\n  \"name\": \"Plan 1\",\n  \"startDate\": \"2023-08-06\",\n  \"endDate\": \"2023-09-06\",\n  \"flagValid\": true,\n  \"digitalRoute\": \"/main/java/pe/sernanp/ws_api\",\n  \"digitalRouteId\": \"2185734\",\n  \"resolution\": \"exp-00001.pdf\",\n  \"resolutionRouteId\": \"\",\n  \"instrumentFile\": \"Archivo de plan de sitio.pdf\",\n  \"instrumentFileId\": \"\",\n  \"flagDraft\": false\n}",
+									"type": "text"
+								},
+								{
+									"key": "resolutionFile",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "instrumentFile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/site-plan",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"site-plan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sitePlan_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/site-plan/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"site-plan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sitePlan_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/site-plan/12",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"site-plan",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sitePlan_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\"instrumentType\": {\"id\":0},\"anpCode\": \"\",\"name\": \"\",\"resolution\": \"\",\"flagValid\": null,\"flagDraft\": null}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/site-plan/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"site-plan",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sitePlan_export",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"instrumentType\": {\r\n        \"id\":0\r\n    },\r\n    \"anpCode\": \"\",\r\n    \"name\": \"\",\r\n    \"resolution\": \"\",\r\n    \"flagValid\": null,\r\n    \"flagDraft\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/site-plan/export",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"site-plan",
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "polygon_listByAnpCode",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/site-plan/list-by-anpcode/ANP-1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"site-plan",
+								"list-by-anpcode",
+								"ANP-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "polygon_listByPolygonCode",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/site-plan/list-by-polygoncode/ANP-1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"site-plan",
+								"list-by-polygoncode",
+								"ANP-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sitePlan_downloadFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/site-plan/download-file/2401900",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"site-plan",
+								"download-file",
+								"2401900"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MatrizObligation",
+			"item": [
+				{
+					"name": "MatrizObligation_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n  \"od\": {\n     \"type\": {\n         \"id\":0\n     },\n     \"modality\": {\n         \"id\":0\n     },\n     \"beneficiary\": {\n         \"id\": 0\n     },\n     \"state\": {\n         \"id\":0\n     },\n     \"code\": \"\",\n     \"anpConfigIds\":\"\",\n     \"resourceAnpConfigIds\":\"\"\n  },\n  \"resourceType\": {\n    \"id\":0\n  }\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"type\": {\r\n    \"id\": 19\r\n  },\r\n  \"od\": {\r\n    \"id\": 1015\r\n  },\r\n  \"period\": \"2024/04\",\r\n  \"fileNumber\": \"EXP-AOL-202401-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/23",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_export",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"od\": {\r\n     \"type\": {\r\n         \"id\":0\r\n     },\r\n     \"modality\": {\r\n         \"id\":0\r\n     },\r\n     \"beneficiary\": {\r\n         \"id\": 0\r\n     },\r\n     \"state\": {\r\n         \"id\":0\r\n     },\r\n     \"code\": \"\",\r\n     \"anpConfigIds\":\"\",\r\n     \"resourceAnpConfigIds\":\"\"\r\n  },\r\n  \"resourceType\": {\r\n    \"id\":0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/export",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_FiscalObligation_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"fiscalObligation\": {\r\n      \"id\": 0,\r\n      \"source\": {\r\n          \"id\": 92\r\n      },\r\n      \"description\": \"Descripción prueba 2\",\r\n      \"characteristic\": \"aaa\",\r\n      \"executionTerm\": 0\r\n      }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/fiscal-obligation/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"fiscal-obligation",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_FiscalObligation_update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 10,\r\n  \"source\": {\r\n      \"id\": 92\r\n  },\r\n  \"description\": \"Descripción prueba 1 - actualizado\",\r\n  \"characteristic\": \"aaa\",\r\n  \"executionTerm\": 0\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/fiscal-obligation/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"fiscal-obligation",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_FiscalObligation_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/fiscal-obligation/10",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"fiscal-obligation",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_FiscalObligation_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/fiscal-obligation/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"fiscal-obligation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_FiscalObligation_export",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/fiscal-obligation/export/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"fiscal-obligation",
+								"export",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_listRecordCode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/list-recordcode",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"list-recordcode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_FiscalObligation_delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 4,\r\n  \"fiscalObligation\": {\r\n      \"id\": 28\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/fiscal-obligation/delete",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"fiscal-obligation",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MatrizObligation_FiscalObligation_deleteMassive",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n      \"id\": 32,\r\n      \"fiscalObligation\": {\r\n          \"id\": 457\r\n      }\r\n    },\r\n    {\r\n      \"id\": 32,\r\n      \"fiscalObligation\": {\r\n          \"id\": 655\r\n      }\r\n    }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation/fiscal-obligation/deletemassive",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation",
+								"fiscal-obligation",
+								"deletemassive"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SupervisionReport",
+			"item": [
+				{
+					"name": "FiscalObligation",
+					"item": [
+						{
+							"name": "FiscalObligation_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"supervisionReport\": {\r\n    \"id\": 1\r\n  },\r\n  \"odFiscalObligation\": {\r\n    \"id\": 28\r\n  },\r\n  \"breach\": {\r\n    \"id\": 10\r\n  },\r\n  \"executionTerm\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/supervision-report/fiscal-obligation/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"supervision-report",
+										"fiscal-obligation",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"supervisionReport\": {\r\n    \"id\": 1\r\n  },\r\n  \"odFiscalObligation\": {\r\n    \"id\": 27\r\n  },\r\n  \"breach\": {\r\n    \"id\": 10\r\n  },\r\n  \"executionTerm\": 15\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/supervision-report/fiscal-obligation/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"supervision-report",
+										"fiscal-obligation",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/supervision-report/fiscal-obligation/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"supervision-report",
+										"fiscal-obligation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/supervision-report/fiscal-obligation/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"supervision-report",
+										"fiscal-obligation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_listBySuperReport (Tabla)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/supervision-report/fiscal-obligation/list-by-is/23",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"supervision-report",
+										"fiscal-obligation",
+										"list-by-is",
+										"23"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FiscalObligation_listForSuperReport (Combo)  eliminar",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/supervision-report/fiscal-obligation/list-for-is/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"supervision-report",
+										"fiscal-obligation",
+										"list-for-is",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SupervisionReport_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n  \"supervisionRecord\": {\n    \"od\": {\n        \"type\": {\n            \"id\":0\n        },\n        \"beneficiary\": {\n            \"id\": 0\n        },\n        \"code\": \"\",\n        \"anpConfigIds\":\"\"\n    },\n    \"flagRegular\": null,\n    \"openingDate\": \"\",\n    \"closingDate\": \"\"\n  },\n  \"recordCode\": \"\",\n  \"reportNumber\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/supervision-report/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-report",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupervisionReport_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 0,\n  \"supervisionRecord\": {\n    \"id\": 248\n  },\n  \"reportNumber\": \"INF-AOL-202401-01\",\n  \"recordCode\": \"EXP-AOL-202401-01\",\n  \"documentReportName\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "documentReport",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/supervision-report",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupervisionReport_update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 2,\n  \"supervisionRecord\": {\n    \"id\": 17\n  },\n  \"reportNumber\": \"acta-001\",\n  \"recordCode\": \"DEMO203\",\n  \"documentReportName\": \"prueba.pdf\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "documentReport",
+									"type": "file",
+									"src": "/C:/Users/Anthony/Downloads/prueba2.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/supervision-report",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupervisionReport_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/supervision-report/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-report",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupervisionReport_calculate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/supervision-report/calculate/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-report",
+								"calculate",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupervisionReport_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/supervision-report/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-report",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupervisionReport_export",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"supervisionRecord\": {\r\n    \"od\": {\r\n        \"type\": {\r\n            \"id\":0\r\n        },\r\n        \"beneficiary\": {\r\n            \"id\": 0\r\n        },\r\n        \"code\": \"\",\r\n        \"anpConfigIds\":\"\"\r\n    },\r\n    \"flagRegular\": null,\r\n    \"openingDate\": \"\",\r\n    \"closingDate\": \"\"\r\n  },\r\n  \"recordCode\": \"\",\r\n  \"reportNumber\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/supervision-report/export",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-report",
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupervisionRecord_listCompetitorById (actaId)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/supervision-record/competitor/list-by-sr/3",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-record",
+								"competitor",
+								"list-by-sr",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupervisionRecord_exportCompetitor (actaId)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/supervision-record/competitor/export/3",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-record",
+								"competitor",
+								"export",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupervisionReport_downloadFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/supervision-report/download-file/2185734",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-report",
+								"download-file",
+								"2185734"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MonitoringReport",
+			"item": [
+				{
+					"name": "MonitoringReport_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n  \"type\": {\n    \"id\": 19\n  },\n  \"od\": {\n    \"beneficiary\": {\n        \"id\": 0\n    },\n    \"code\": \"\",\n    \"anpConfigIds\":\"\",\n    \"startDate\": \"\",\n    \"endDate\": \"\"\n  },\n  \"reportNumber\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringReport_save_Turismo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 0,\n  \"type\": {\n    \"id\": 19\n  },\n  \"od\": {\n    \"id\": 944\n  },\n  \"resourceType\": {\n    \"id\": 0\n  },\n  \"resource\": {\n    \"id\": 0\n  },\n  \"monitoringRecordIds\": \"\",\n  \"reportNumber\": \"INF-SEG-OD-001-01-TUR\",\n  \"recommendations\": \"\",\n  \"additionalRecommendations\": \"\",\n  \"conclusions\": \"\",\n  \"documentReportName\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "documentReport",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringReport_update_Turismo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\"id\":3,\"type\":{\"id\":19},\"od\":{\"id\":943},\"resourceType\":{\"id\":null},\"resource\":{\"id\":null},\"monitoringRecordIds\":\"60,64,65\",\"reportNumber\":\"INF-SEG-OD-002-01-TUR\",\"documentReportName\":\"Comunicado 20-09-2023 (1).pdf\"}",
+									"type": "text"
+								},
+								{
+									"key": "documentReport",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringReport_save_Recurso",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 0,\n  \"type\": {\n    \"id\": 18\n  },\n  \"od\": {\n    \"id\": 0\n  },\n  \"resourceType\": {\n    \"id\": 112\n  },\n  \"resource\": {\n    \"id\": 122\n  },\n  \"monitoringRecordIds\": \"71,72\",\n  \"reportNumber\": \"INF-SEG-OD-002-REC\",\n  \"recommendations\": \"\",\n  \"additionalRecommendations\": \"\",\n  \"conclusions\": \"\",\n  \"documentReportName\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "documentReport",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringReport_update_Recurso",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": 0,\n  \"type\": {\n    \"id\": 18\n  },\n  \"od\": {\n    \"id\": 0\n  },\n  \"resourceType\": {\n    \"id\": 14\n  },\n  \"resource\": {\n    \"id\": 105\n  },\n  \"monitoringRecordIds\": \"\",\n  \"reportNumber\": \"INF-SEG-OD-001-01-TUR\",\n  \"recommendations\": \"\",\n  \"additionalRecommendations\": \"\",\n  \"conclusions\": \"\",\n  \"documentReportName\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "documentReport",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringRecord_listByResourceId (listar actas por recurso)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-record/list-by-resource/122",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-record",
+								"list-by-resource",
+								"122"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringRecord_listById (listar actas)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report/list-monitoring-record-by-id/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report",
+								"list-monitoring-record-by-id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringReport_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report/2",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringReport_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringReport_export",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": {\r\n    \"id\": 18\r\n  },\r\n  \"od\": {\r\n    \"beneficiary\": {\r\n        \"id\": 0\r\n    },\r\n    \"code\": \"\",\r\n    \"anpConfigIds\":\"\",\r\n    \"startDate\": \"\",\r\n    \"endDate\": \"\"\r\n  },\r\n  \"reportNumber\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report/export",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report",
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringReport_downloadFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report/download-file/6a4ac3ec-e865-45ef-9f48-70bf714a7514",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report",
+								"download-file",
+								"6a4ac3ec-e865-45ef-9f48-70bf714a7514"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringReport_updateConclusion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"recommendations\": \"Recomendaciones\",\r\n  \"additionalRecommendations\": \"Recomendaciones adicionales\",\r\n  \"conclusions\": \"Conclusiones\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-report/update-conclusion",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-report",
+								"update-conclusion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Acta supervisión",
+			"item": [
+				{
+					"name": "SupervisionRecord_listByType",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/supervision-record/list-by-type/19",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-record",
+								"list-by-type",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ficalObligaiton_listMatrizByOd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/fiscal-obligation/list-matriz-by-od/6",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"fiscal-obligation",
+								"list-matriz-by-od",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"type\": {\r\n    \"id\": 19\r\n  },\r\n  \"od\": {\r\n    \"id\": 1015,\r\n    \"anpNames\": \"Reserva Nacional Pacaya-Samiria\",\r\n    \"sectorIds\": null,\r\n    \"resourceNames\": \"Recurso Paisaje\",\r\n    \"description\": \"AC-15-RN08-01\",\r\n    \"titleNumber\": \"Acuerdo N° 001-2015-SERNANP-RNPS/J\",\r\n    \"startDate\": \"2015-12-03\",\r\n    \"endDate\": \"2019-12-03\",\r\n    \"state\": {\r\n      \"name\": \"No vigente\"\r\n    },\r\n    \"modality\": {\r\n      \"description\": \"ACUERDOS PARA LA PRESTACIÓN DE SERVICIOS TURÍSTICOS\"\r\n    },\r\n    \"beneficiary\": {\r\n      \"documentNumber\": \"20572191657\",\r\n      \"name\": \"Asociación Huayruros Tours\"\r\n    }\r\n  },\r\n  \"period\": \"2024/04\",\r\n  \"fileNumber\": \"EXP-AOL-202401-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/matriz-obligation",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"matriz-obligation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifiedFact_listBYSR",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/supervision-record/verified-fact/list-by-sr/248",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"supervision-record",
+								"verified-fact",
+								"list-by-sr",
+								"248"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Acta Seguiminto",
+			"item": [
+				{
+					"name": "MonitoringRecord_listByType",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/monitoring-record/list-by-type/19",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"monitoring-record",
+								"list-by-type",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sector",
+			"item": [
+				{
+					"name": "Area",
+					"item": [
+						{
+							"name": "area_search",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "item",
+											"value": "{\n   \"sector\": {\n     \"id\": 1\n   },\n   \"anpCode\": \"\",\n   \"code\": \"\",\n   \"name\": \"\"\n}",
+											"type": "text"
+										},
+										{
+											"key": "paginator",
+											"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}/sector/area/search",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"sector",
+										"area",
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "area_save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"sector\": {\r\n      \"id\": 1\r\n    },\r\n    \"code\": \"ST-01-7\",\r\n    \"name\": \"area 7\",\r\n    \"area\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/sector/area",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"sector",
+										"area"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "area_update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 0,\r\n    \"sector\": {\r\n      \"id\": 1\r\n    },\r\n    \"code\": \"ST-01-7\",\r\n    \"name\": \"area 7\",\r\n    \"area\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/sector/area",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"sector",
+										"area"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "area_detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/sector/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"sector",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "area_delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/sector/5",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"sector",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "area_listBySector",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{API_URL}}/sector/list-by-sector/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"sector",
+										"list-by-sector",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "sector_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n   \"anpCode\": \"\",\n   \"code\": \"\",\n   \"name\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/sector/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"sector",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sector_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"anpCode\": \"\",\r\n    \"code\": \"ST-01-9\",\r\n    \"name\": \"Sector 1-9\",\r\n    \"area\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/sector",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"sector"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sector_update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"anpCode\": \"ANP-1\",\r\n    \"code\": \"ST-01-2\",\r\n    \"name\": \"Sector 1-2\",\r\n    \"area\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/sector",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"sector"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sector_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/sector/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"sector",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sector_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/sector/5",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"sector",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sector_listByAnp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/sector/list-by-anp/ANP-1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"sector",
+								"list-by-anp",
+								"ANP-1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Polygon",
+			"item": [
+				{
+					"name": "polygon_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n   \"sector\": {\n     \"id\": 0,\n     \"anpCode\": \"\"\n   },\n   \"code\": \"\",\n   \"name\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/polygon/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"polygon",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "polygon_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"sector\": {\r\n      \"id\": 21\r\n    },\r\n    \"code\": \"PL-01\",\r\n    \"name\": \"poligono 1\",\r\n    \"route\": \"-\",\r\n    \"area\": \"Poligono ejemplo 1\",\r\n    \"hectares\": 110\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/polygon",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"polygon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "polygon_update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"sector\": {\r\n      \"id\": 1\r\n    },\r\n    \"code\": \"PL-01\",\r\n    \"name\": \"poligono 1\",\r\n    \"route\": \"-\",\r\n    \"area\": \"Poligono ejemplo 1 - update\",\r\n    \"hectares\": 120\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/polygon",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"polygon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "polygon_detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/polygon/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"polygon",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "polygon_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/polygon/4",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"polygon",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "polygon_listBySector",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/polygon/list-by-sector/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"polygon",
+								"list-by-sector",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "polygon_listByAnp",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{API_URL}}/polygon/list-by-anp/RN08,RN09",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"polygon",
+								"list-by-anp",
+								"RN08,RN09"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Procedure",
+			"item": [
+				{
+					"name": "procedure_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "item",
+									"value": "{\n   \"state\": 0,\n   \"type\": 0,\n   \"modality\": 0,\n   \"anpConfigIds\":  \"\",\n   \"code\": \"\",\n   \"titleDerecho\": \"\",\n   \"cut\": \"\",\n   \"startDate\": \"\",\n   \"endDate\": \"\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "paginator",
+									"value": "{\"offset\":\"1\",\"limit\":\"10\",\"sort\":\"name\",\"order\":\"asc\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/procedure/search",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"procedure",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fileMVP_listByProcedure",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/filemvp/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"filemvp",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "procedure_updateCut",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/procedure/updateCut/27751/00023/2024",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"procedure",
+								"updateCut",
+								"27751",
+								"00023",
+								"2024"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "notificacion_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": \"0\",\n  \"procedure\": { \n    \"id\": 127\n  },\n  \"date\": \"2024-06-21\",\n  \"notificacion\": \"notifi\",\n  \"comentario\": \"comen\",\n  \"documentName\": \"prueba.pdf\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Anthony/Downloads/prueba.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/notification/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"notification",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notification_listByProcedure",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/notification/list-by-procedure/5",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"notification",
+								"list-by-procedure",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notificacion_downloadFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/notification/download-file/c79b86e1-06b6-4cbf-b8db-24a245195996",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"notification",
+								"download-file",
+								"c79b86e1-06b6-4cbf-b8db-24a245195996"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Evaluation",
+			"item": [
+				{
+					"name": "EvaluationCompatible_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": \"0\",\n  \"procedure\": { \n    \"id\": 127\n  },\n  \"hasData\": false,\n  \"description\": \"notifi\",\n  \"documentName\": \"prueba.pdf\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Anthony/Downloads/prueba.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/evaluationcompatible/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"evaluationcompatible",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EvaluationEconomic_save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "item",
+									"value": "{\n  \"id\": \"0\",\n  \"procedure\": { \n    \"id\": 127\n  },\n  \"hasData\": false,\n  \"monetary\": 0,\n  \"noMonetary\": 0,\n  \"description\": \"notifi\",\n  \"documentName\": \"prueba.pdf\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Anthony/Downloads/prueba.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/evaluationeconomic/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"evaluationeconomic",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EvaluationEconomic_downloadFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/evaluationeconomic/download-file/c79b86e1-06b6-4cbf-b8db-24a245195996",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"evaluationeconomic",
+								"download-file",
+								"c79b86e1-06b6-4cbf-b8db-24a245195996"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EvaluationCompatible_downloadFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/evaluationcompatible/download-file/c79b86e1-06b6-4cbf-b8db-24a245195996",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"evaluationcompatible",
+								"download-file",
+								"c79b86e1-06b6-4cbf-b8db-24a245195996"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sector_listByAnp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/sector/list-by-anp/2",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"sector",
+						"list-by-anp",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sector_listByAnpconfig",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/sector/list-by-anpconfig/10",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"sector",
+						"list-by-anpconfig",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "polygon_listBySector",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/polygon/list-by-sector/RN101",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"polygon",
+						"list-by-sector",
+						"RN101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PdaSector_listByAnps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/anpSectores/list-by-anps/41,42",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"anpSectores",
+						"list-by-anps",
+						"41,42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PdaSector_exportByAnps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/anpSectores/export-by-anps/41,42",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"anpSectores",
+						"export-by-anps",
+						"41,42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Evaluation_exportByProcedure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/evaluationresult/export-by-procedure/15",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"evaluationresult",
+						"export-by-procedure",
+						"15"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
